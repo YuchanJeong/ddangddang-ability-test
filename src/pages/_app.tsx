@@ -2,7 +2,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 
-import { Footer } from "../components/Footer.tsx/Footer";
+import { Footer } from "../components/footer/Footer";
 import { Header } from "../components/header/Header";
 import { useThemeInLocalStorage } from "../hooks/useThemeInLocalStorage";
 import GlobalStyle from "../styles/GlobalStyle";
