@@ -13,6 +13,7 @@ import {
   UnderlineBtnTitle,
 } from "./Header.style";
 
+//# 헤더 타입
 interface IHeaderProps {
   isDarkMode: boolean;
   toggleTheme: () => void;
