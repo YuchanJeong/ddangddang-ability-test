@@ -1,6 +1,14 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, Dispatch, SetStateAction, useState } from "react";
 
-import { IUseSelectResult } from "./useSelect.d";
+/** \# useSelect 반환값 타입 */
+export interface IUseSelectResult {
+  attribute: {
+    value: string;
+    onChange: (ev: ChangeEvent<HTMLSelectElement>) => void;
+  };
+  value: string;
+  setValue: Dispatch<SetStateAction<string>>;
+}
 
 /**
  * \# select 요소 값 관리

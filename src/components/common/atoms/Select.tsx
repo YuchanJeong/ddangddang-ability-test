@@ -1,9 +1,16 @@
 import styled from "styled-components";
 
-import { ISelect } from "./Select.d";
+import { IUseSelectResult } from "../../../hooks/useSelect";
 
-//# select 스타일
-const SelectStyle = styled.select<Pick<ISelect, "width">>`
+//# Select 타입
+interface ISelectProps {
+  width: string;
+  list: string[];
+  select: IUseSelectResult;
+}
+
+//# Select 스타일
+const SelectStyle = styled.select<Pick<ISelectProps, "width">>`
   width: ${({ width }) => width};
   padding: ${({ theme }) => theme.size.sm};
   padding-right: ${({ theme }) => theme.size.lg};
@@ -13,7 +20,7 @@ const SelectStyle = styled.select<Pick<ISelect, "width">>`
   cursor: pointer;
 `;
 
-//# select 화살표 스타일
+//# Select 화살표 스타일
 const ArrowStyle = styled.span`
   position: absolute;
   transform: translate(-2rem, 0.6rem);
@@ -21,12 +28,12 @@ const ArrowStyle = styled.span`
 `;
 
 /**
- * \# Select & Option
+ * \# Select
  * @param width `string` select 넓이
  * @param list `string[]` option 목록
  * @param select `{ attribute, value, setValue }` useSelect의 반환값
  */
-export function Select(props: ISelect) {
+export function Select(props: ISelectProps) {
   return (
     <div>
       <SelectStyle width={props.width} {...props.select.attribute}>
