@@ -15,7 +15,9 @@ export function Footer() {
             <Link
               href={"https://github.com/YuchanJeong/ddangddang-avility-test"}
             >
-              <FaGithub />
+              <>
+                <FaGithub />
+              </>
             </Link>
           </AccentBtn>
         </FlexBoxFooter>
