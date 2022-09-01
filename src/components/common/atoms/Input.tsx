@@ -20,7 +20,7 @@ const InputStyle = styled.input<Pick<IInputProps, "width">>`
   border-radius: ${({ theme }) => theme.size.br};
   background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.text};
-  cursor: pointer;
+  cursor: text;
 `;
 
 /**
