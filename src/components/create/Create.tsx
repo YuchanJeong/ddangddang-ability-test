@@ -1,7 +1,8 @@
 import { useSelect } from "../../hooks/useSelect";
-import { PageInnerBox } from "../common/atoms/BasicStyles";
-import { Select } from "../common/atoms/Select";
+import { PageInnerBox } from "../atoms/BasicStyles";
+import { Select } from "../atoms/Select";
 
+/** \# 시험 생성 페이지 */
 export function Create() {
   const EXAMPLES = ["1번 목록입니다.", "2번 목록입니다.", "3번 목록입니다."]; //!
   const select = useSelect(EXAMPLES[0]);

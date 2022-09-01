@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { IUseInputResult } from "../../../hooks/useInput";
+import { IUseInputResult } from "../../hooks/useInput";
 
 //# Input 타입
 interface IInputProps {

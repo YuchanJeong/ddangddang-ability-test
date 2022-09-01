@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 
-import { InnerBox } from "../common/atoms/BasicStyles";
-import { AccentBtn } from "../common/atoms/Btns";
+import { InnerBox } from "../atoms/BasicStyles";
+import { AccentBtn } from "../atoms/Btns";
 import { FlexBoxFooter, OuterBox } from "./Footer.style";
 
+/** \# 푸터 */
 export function Footer() {
   return (
     <OuterBox>

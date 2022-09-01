@@ -2,8 +2,8 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { FaSun, FaMoon, FaHamburger } from "react-icons/fa";
 
-import { InnerBox } from "../common/atoms/BasicStyles";
-import { AccentBtn } from "../common/atoms/Btns";
+import { InnerBox } from "../atoms/BasicStyles";
+import { AccentBtn } from "../atoms/Btns";
 import {
   BtnMenuMobile,
   FlexBoxHeader,

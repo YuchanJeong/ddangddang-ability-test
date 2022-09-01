@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { FlexBox } from "../common/atoms/BasicStyles";
+import { FlexBox } from "../atoms/BasicStyles";
 
 /** \# 높이 10rem의 색상 반전 공간 */
 export const OuterBox = styled.div`
