@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { FaSun, FaMoon, FaHamburger } from "react-icons/fa";
 
-import { InnerBox } from "../atoms/BasicStyles";
+import { FlexBox, InnerBox } from "../atoms/BasicStyles";
 import { AccentBtn } from "../atoms/Btns";
 import {
   BtnMenuMobile,
@@ -68,9 +68,11 @@ export function Header(props: IHeaderProps) {
         </BtnMenuMobile>
       </FlexBoxHeader>
       {isMobileMenuOn ? (
-        <FlexBoxMenusMobile>
-          <Menus />
-        </FlexBoxMenusMobile>
+        <FlexBox justifyContent="flex-end">
+          <FlexBoxMenusMobile>
+            <Menus />
+          </FlexBoxMenusMobile>
+        </FlexBox>
       ) : null}
     </InnerBox>
   );
