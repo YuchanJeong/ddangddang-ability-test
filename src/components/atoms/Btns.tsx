@@ -51,3 +51,23 @@ export const CancelBtn = styled(BorderBtn)`
   background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.accent};
 `;
+
+/**
+ * \# 탭 버튼
+ * @param width  버튼 넓이
+ * @param isActive 탭 활성화 여부
+ */
+export const TapBtn = styled(Btn)<{ width: string; isActive: boolean }>`
+  width: ${({ width }) => width};
+  padding: ${({ theme }) => theme.size.sm};
+  padding-top: ${({ theme }) => theme.size.md};
+  border-radius: ${({ theme }) => theme.size.br} ${({ theme }) => theme.size.br}
+    0 0;
+  background-color: ${({ theme, isActive }) =>
+    isActive ? theme.colors.accent : "transparent"};
+  text-align: center;
+  &:hover {
+    color: ${({ theme, isActive }) =>
+      isActive ? theme.colors.primary : theme.colors.accent};
+  }
+`;
