@@ -14,6 +14,11 @@ const SelectStyle = styled.select<Pick<ISelectProps, "width">>`
   width: ${({ width }) => width};
   padding: ${({ theme }) => theme.size.sm};
   padding-right: ${({ theme }) => theme.size.lg};
+  border: 1px solid ${({ theme }) => theme.colors.text};
+  &:focus {
+    border: 1px solid ${({ theme }) => theme.colors.accent};
+    outline: 1px solid ${({ theme }) => theme.colors.accent};
+  }
   border-radius: ${({ theme }) => theme.size.br};
   background-color: transparent; //> ArrowStyle 보임
   color: ${({ theme }) => theme.colors.text};
