@@ -11,6 +11,12 @@ export const InnerBox = styled.div`
   min-width: 320px;
 `;
 
+/** \# 최대 넓이 1200px, 최소 넓이 320px인 가로 가운데 정렬된 공간 / 헤더 및 푸터에 따라 높이 조정 */
+export const PageInnerBox = styled(InnerBox)`
+  padding: ${({ theme }) => theme.size.lg};
+  min-height: calc(100vh - 17rem);
+`;
+
 /**
  * \# Flex-box
  * @param justifyContent ? `"center"(def) | "flex-start" | "flex-end" | "space-between" | "space-around";`

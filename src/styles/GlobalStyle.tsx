@@ -11,7 +11,18 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%; //> 1rem = 10px;  
   }
-  
+
+  //^IE
+  select::-ms-expand {
+    display: none;
+  }
+  //# SELECT 기본 스타일 제거
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+    
   ${({ theme }) => {
     return css`
       body {
