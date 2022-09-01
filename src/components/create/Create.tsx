@@ -1,15 +1,35 @@
-import { useSelect } from "../../hooks/useSelect";
-import { PageInnerBox } from "../atoms/BasicStyles";
-import { Select } from "../atoms/Select";
+import { useState } from "react";
+
+import { BorderDiv, FlexBox, PageInnerBox } from "../atoms/BasicStyles";
+import { TapBtn } from "../atoms/Btns";
 
 /** \# 시험 생성 페이지 */
 export function Create() {
-  const EXAMPLES = ["1번 목록입니다.", "2번 목록입니다.", "3번 목록입니다."]; //!
-  const select = useSelect(EXAMPLES[0]);
+  //#
+  const [isTestInfoActive, setIsTestInfoActive] = useState<boolean>(true);
+  const toggleActive = () => {
+    setIsTestInfoActive((prevState) => !prevState);
+  };
 
   return (
     <PageInnerBox>
-      <Select width="14rem" list={EXAMPLES} select={select} />
+      <FlexBox justifyContent="flex-start">
+        <TapBtn
+          onClick={toggleActive}
+          width="10rem"
+          isActive={isTestInfoActive}
+        >
+          1. 시험 정보
+        </TapBtn>
+        <TapBtn
+          onClick={toggleActive}
+          width="10rem"
+          isActive={!isTestInfoActive}
+        >
+          2. 문제
+        </TapBtn>
+      </FlexBox>
+      <BorderDiv>{isTestInfoActive ? "시험 정보" : "문제"}</BorderDiv>
     </PageInnerBox>
   );
 }
