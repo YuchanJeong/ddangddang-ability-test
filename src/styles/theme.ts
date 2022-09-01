@@ -4,6 +4,7 @@ export const size = {
   md: "1rem",
   lg: "2rem",
   xl: "3rem",
+  br: "5px",
 };
 
 //# 폰트
