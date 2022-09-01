@@ -43,3 +43,10 @@ export const Btn = styled.div`
   -ms-user-select: none;
   user-select: none;
 `;
+
+/** \# 강조색을 테두리로 가지는 공간 */
+export const BorderDiv = styled.div`
+  padding: ${({ theme }) => theme.size.lg};
+  border: 1px solid ${({ theme }) => theme.colors.accent};
+  width: 100%;
+`;
