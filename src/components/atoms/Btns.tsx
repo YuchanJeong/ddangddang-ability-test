@@ -21,7 +21,6 @@ const BorderBtn = styled(Btn)<{ width: string }>`
   width: ${({ width }) => width};
   padding: ${({ theme }) => theme.size.sm};
   border-radius: ${({ theme }) => theme.size.br};
-  cursor: pointer;
   text-align: center;
   &:hover {
     color: ${({ theme }) => theme.colors.text};
