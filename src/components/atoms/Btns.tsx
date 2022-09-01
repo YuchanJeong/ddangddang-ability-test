@@ -54,7 +54,7 @@ export const CancelBtn = styled(BorderBtn)`
 
 /**
  * \# 탭 버튼
- * @param width  버튼 넓이
+ * @param width 버튼 넓이
  * @param isActive 탭 활성화 여부
  */
 export const TapBtn = styled(Btn)<{ width: string; isActive: boolean }>`
