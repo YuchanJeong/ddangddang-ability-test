@@ -46,14 +46,14 @@ const colors = {};
 
 export const lightThemeColors = {
   ...colors,
-  accent: "#C8A2C8",
+  accent: "#87CDEE", //> Baby
   text: "#222120",
   primary: "#FAFAFA",
 };
 
 const darkThemeColors = {
   ...colors,
-  accent: "#7F00FF",
+  accent: "#57A0D3", //> Olympic
   text: "#FAFAFA",
   primary: "#222120",
 };
