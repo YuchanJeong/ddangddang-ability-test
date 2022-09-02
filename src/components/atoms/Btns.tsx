@@ -28,7 +28,7 @@ const BorderBtn = styled(Btn)<{ width: string }>`
   &:active {
     color: ${({ theme }) => theme.colors.text};
     background-color: ${({ theme }) => theme.colors.accent};
-    box-shadow: inset 0 0 50px 10px ${({ theme }) => theme.colors.primary};
+    box-shadow: inset 0 0 60px 0 ${({ theme }) => theme.colors.primary};
   }
 `;
 
@@ -65,9 +65,10 @@ export const TapBtn = styled(Btn)<{ width: string; isActive: boolean }>`
     0 0;
   background-color: ${({ theme, isActive }) =>
     isActive ? theme.colors.accent : "transparent"};
+  color: ${({ theme, isActive }) =>
+    isActive ? theme.colors.primary : theme.colors.accent};
   text-align: center;
   &:hover {
-    color: ${({ theme, isActive }) =>
-      isActive ? theme.colors.primary : theme.colors.accent};
+    color: ${({ theme }) => theme.colors.text};
   }
 `;
