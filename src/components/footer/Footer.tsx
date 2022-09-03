@@ -2,8 +2,7 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 
 import { InnerBox } from "../atoms/BasicStyles";
-import { AccentBtn } from "../atoms/Btns";
-import { FlexBoxFooter, OuterBox } from "./Footer.style";
+import { AccentBtnReverse, FlexBoxFooter, OuterBox } from "./Footer.style";
 
 /** \# 푸터 */
 export function Footer() {
@@ -12,7 +11,7 @@ export function Footer() {
       <InnerBox>
         <FlexBoxFooter>
           <div>© 2022 Yuchan Jeong</div>
-          <AccentBtn>
+          <AccentBtnReverse>
             <Link
               href={"https://github.com/YuchanJeong/ddangddang-avility-test"}
             >
@@ -20,7 +19,7 @@ export function Footer() {
                 <FaGithub />
               </>
             </Link>
-          </AccentBtn>
+          </AccentBtnReverse>
         </FlexBoxFooter>
       </InnerBox>
     </OuterBox>
