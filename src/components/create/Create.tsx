@@ -15,18 +15,22 @@ export function Create() {
     <PageInnerBox>
       <FlexBox justifyContent="flex-start">
         <TapBtn
-          onClick={toggleActive}
+          onClick={() => {
+            if (!isTestInfoActive) toggleActive();
+          }}
           width="10rem"
           isActive={isTestInfoActive}
         >
-          1. 시험 정보
+          시험 정보
         </TapBtn>
         <TapBtn
-          onClick={toggleActive}
+          onClick={() => {
+            if (isTestInfoActive) toggleActive();
+          }}
           width="10rem"
           isActive={!isTestInfoActive}
         >
-          2. 문제
+          문제
         </TapBtn>
       </FlexBox>
       <BorderDiv>{isTestInfoActive ? "시험 정보" : "문제"}</BorderDiv>

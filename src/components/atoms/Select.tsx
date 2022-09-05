@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 import { IUseSelectResult } from "../../hooks/useSelect";
 
-//# Select 타입
+//# 선택창 Props 타입
 interface ISelectProps {
   width: string;
   list: string[];
   select: IUseSelectResult;
 }
 
-//# Select 스타일
+//# 선택창 스타일
 const SelectStyle = styled.select<Pick<ISelectProps, "width">>`
   width: ${({ width }) => width};
   padding: ${({ theme }) => theme.size.sm};
@@ -25,7 +25,7 @@ const SelectStyle = styled.select<Pick<ISelectProps, "width">>`
   cursor: pointer;
 `;
 
-//# Select 화살표 스타일
+//# 선택창 화살표 스타일
 const ArrowStyle = styled.span`
   position: absolute;
   transform: translate(-2rem, 0.6rem);
@@ -33,7 +33,7 @@ const ArrowStyle = styled.span`
 `;
 
 /**
- * \# Select
+ * \# 선택창
  * @param width `string` select 넓이
  * @param list `string[]` option 목록
  * @param select `{ attribute, value, setValue }` useSelect의 반환값

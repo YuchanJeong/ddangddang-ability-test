@@ -49,6 +49,7 @@ export const lightThemeColors = {
   accent: "#87CDEE", //> Baby
   text: "#222120",
   primary: "#FAFAFA",
+  secondary: "#e9e9e9",
 };
 
 const darkThemeColors = {
@@ -56,6 +57,7 @@ const darkThemeColors = {
   accent: "#57A0D3", //> Olympic
   text: "#FAFAFA",
   primary: "#222120",
+  secondary: "#3f3f3f",
 };
 
 //# 공통 스타일 모음
