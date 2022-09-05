@@ -15,15 +15,11 @@ import {
 
 //# 헤더 타입
 interface IHeaderProps {
-  isDarkMode: boolean;
-  toggleTheme: () => void;
+  isDarkMode: boolean; //>  다크 모드 여부
+  toggleTheme: () => void; //> 테마 변경 함수
 }
 
-/**
- * \# 헤더
- * @param isDarkMode `boolean;` 다크 모드 여부
- * @param toggleTheme `() => void;` 테마 변경 함수
- */
+/** \# 헤더 */
 export function Header(props: IHeaderProps) {
   //# 테마 전환
   const [isMobileMenuOn, setIsMobileMenuOn] = useState<boolean>(false);
