@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { FaSun, FaMoon, FaHamburger } from "react-icons/fa";
+import { FaSun, FaMoon, FaBars } from "react-icons/fa";
 
 import { FlexBox, InnerBox } from "../atoms/BasicStyles";
 import { AccentBtn } from "../atoms/Btns";
@@ -48,11 +48,17 @@ export function Header(props: IHeaderProps) {
   //# 메뉴 모음
   const Menus = () => (
     <>
-      <UnderlineBtnMenu onClick={goToTag}>태그</UnderlineBtnMenu>
-      <UnderlineBtnMenu onClick={goToCreate}>시험 만들기</UnderlineBtnMenu>
-      <AccentBtn onClick={props.toggleTheme}>
-        {props.isDarkMode ? <FaSun /> : <FaMoon />}
-      </AccentBtn>
+      <FlexBox justifyContent="flex-end">
+        <UnderlineBtnMenu onClick={goToTag}>태그</UnderlineBtnMenu>
+      </FlexBox>
+      <FlexBox justifyContent="flex-end">
+        <UnderlineBtnMenu onClick={goToCreate}>시험 만들기</UnderlineBtnMenu>
+      </FlexBox>
+      <FlexBox justifyContent="flex-end">
+        <AccentBtn onClick={props.toggleTheme}>
+          {props.isDarkMode ? <FaSun /> : <FaMoon />}
+        </AccentBtn>
+      </FlexBox>
     </>
   );
 
@@ -64,7 +70,7 @@ export function Header(props: IHeaderProps) {
           <Menus />
         </FlexBoxMenus>
         <BtnMenuMobile isMobileMenuOn={isMobileMenuOn} onClick={toggleMenu}>
-          <FaHamburger />
+          <FaBars />
         </BtnMenuMobile>
       </FlexBoxHeader>
       {isMobileMenuOn ? (
