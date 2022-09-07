@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { IFlexBox } from "./BasicStyles.d";
+import { IFlexBox } from "./BasicStyles.type";
 
 /** \# 최대 넓이 1200px, 최소 넓이 320px인 가로 가운데 정렬된 공간 */
 export const InnerBox = styled.div`

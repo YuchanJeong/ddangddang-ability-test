@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FlexBox } from "../atoms/BasicStyles";
 import { DefaultImage, SrcImage, ISrcImageProps } from "../atoms/Images";
 import { InputFile } from "../atoms/Inputs";
-import { IInputFileProps } from "../atoms/Inputs.d";
+import { IInputFileProps } from "../atoms/Inputs.type";
 
 //# 업로드 이미지 Props 타입
 type TUploadImageProps = IInputFileProps & ISrcImageProps;
