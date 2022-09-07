@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import { FlexBox, Btn } from "../atoms/BasicStyles";
-import { UnderlineBtn } from "../atoms/Btns";
+import { FlexBox, Btn } from "../common/atoms/BasicStyles";
+import { UnderlineBtn } from "../common/atoms/Btns";
 
 /** \# Flex-box / 양끝 정렬 */
 export const FlexBoxHeader = styled(FlexBox)`

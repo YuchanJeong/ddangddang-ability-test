@@ -2,7 +2,7 @@ import { FaTrashAlt, FaUpload } from "react-icons/fa";
 import styled from "styled-components";
 
 import { FlexBox } from "./BasicStyles";
-import { IInputFileProps, IInputProps } from "./Inputs.d";
+import { IInputFileProps, IInputProps } from "./Inputs.type";
 
 //# 문자 입력창 스타일
 const InputStyle = styled.input<{ width: string }>`

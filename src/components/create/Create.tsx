@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import { BorderDiv, FlexBox, PageInnerBox } from "../atoms/BasicStyles";
-import { TapBtn } from "../atoms/Btns";
+import { BorderDiv, FlexBox, PageInnerBox } from "../common/atoms/BasicStyles";
+import { TapBtn } from "../common/atoms/Btns";
 
 /** \# 시험 생성 페이지 */
 export function Create() {

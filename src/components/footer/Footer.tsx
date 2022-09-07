@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 
-import { InnerBox } from "../atoms/BasicStyles";
+import { InnerBox } from "../common/atoms/BasicStyles";
 import { AccentBtnReverse, FlexBoxFooter, OuterBox } from "./Footer.style";
 
 /** \# 푸터 */

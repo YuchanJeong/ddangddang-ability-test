@@ -1,6 +1,6 @@
 import { ChangeEvent } from "react";
 
-import { IUseInputResult } from "../../hooks/useInput";
+import { IUseInputResult } from "../../../hooks/useInput";
 
 /** 문자 입력창 Props 타입 */
 export interface IInputProps {

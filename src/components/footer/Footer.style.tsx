@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import { FlexBox } from "../atoms/BasicStyles";
-import { AccentBtn } from "../atoms/Btns";
+import { FlexBox } from "../common/atoms/BasicStyles";
+import { AccentBtn } from "../common/atoms/Btns";
 
 /** \# 높이 10rem의 색상 반전 공간 */
 export const OuterBox = styled.div`

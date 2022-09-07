@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { IUseSelectResult } from "../../hooks/useSelect";
+import { IUseSelectResult } from "../../../hooks/useSelect";
 
 //# 선택창 Props 타입
 interface ISelectProps {
